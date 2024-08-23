@@ -54,26 +54,26 @@ class Hud extends StatelessWidget {
               },
               child: const Icon(Icons.pause, color: Colors.white),
             ),
-            Selector<PlayerData, int>(
-              selector: (_, playerData) => playerData.lives,
-              builder: (_, lives, __) {
-                return Row(
-                  children: List.generate(5, (index) {
-                    if (index < lives) {
-                      return const Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                      );
-                    } else {
-                      return const Icon(
-                        Icons.favorite_border,
-                        color: Colors.red,
-                      );
-                    }
-                  }),
-                );
-              },
-            )
+            // Selector<PlayerData, int>(
+            //   selector: (_, playerData) => playerData.lives,
+            //   builder: (_, lives, __) {
+            //     return Row(
+            //       children: List.generate(5, (index) {
+            //         if (index < lives) {
+            //           return const Icon(
+            //             Icons.favorite,
+            //             color: Colors.red,
+            //           );
+            //         } else {
+            //           return const Icon(
+            //             Icons.favorite_border,
+            //             color: Colors.red,
+            //           );
+            //         }
+            //       }),
+            //     );
+            //   },
+            // )
           ],
         ),
       ),

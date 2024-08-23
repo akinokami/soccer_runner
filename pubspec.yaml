@@ -31,8 +31,7 @@ flutter:
     - assets/images/
     - assets/images/parallax/
     - assets/images/AngryPig/
-    - assets/images/Bat/
-    - assets/images/Rino/
+    - assets/images/barrier/
     - assets/audio/
 
   fonts:

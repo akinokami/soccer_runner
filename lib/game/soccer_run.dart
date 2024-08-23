@@ -21,11 +21,12 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
 
   static const _imageAssets = [
     'soccers.webp',
-    'AngryPig/Walk (36x30).webp',
-    'Bat/Flying (46x30).webp',
+    'barrier/barrier.webp',
+    'barrier/barrier_fast.webp',
     'parallax/background.webp',
   ];
-
+  // 'AngryPig/Walk (36x30).webp',
+  // 'Bat/Flying (46x30).webp',
   static const _audioAssets = [
     '8BitPlatformerLoop.wav',
     'hurt7.wav',
@@ -83,7 +84,7 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
   void reset() {
     _disconnectActors();
     playerData.currentScore = 0;
-    playerData.lives = 5;
+    playerData.lives = 1;
   }
 
   @override
