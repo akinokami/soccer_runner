@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/utils.dart';
 import 'package:provider/provider.dart';
+import 'package:soccer_run/screens/widget/custom_game_button.dart';
+import 'package:soccer_run/screens/widget/custom_text.dart';
 
 import '../game/soccer_run.dart';
 import '/game/audio_manager.dart';
@@ -20,40 +24,53 @@ class Hud extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 10.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              children: [
-                Selector<PlayerData, int>(
-                  selector: (_, playerData) => playerData.currentScore,
-                  builder: (_, score, __) {
-                    return Text(
-                      'Score: $score',
-                      style: const TextStyle(fontSize: 20, color: Colors.white),
-                    );
-                  },
-                ),
-                Selector<PlayerData, int>(
-                  selector: (_, playerData) => playerData.highScore,
-                  builder: (_, highScore, __) {
-                    return Text(
-                      'High: $highScore',
-                      style: const TextStyle(color: Colors.white),
-                    );
-                  },
-                ),
-              ],
+            Selector<PlayerData, int>(
+              selector: (_, playerData) => playerData.highScore,
+              builder: (_, highScore, __) {
+                return CustomText(
+                  text: "${'high_score'.tr}: $highScore",
+                  textColor: Colors.deepOrange,
+                  fontWeight: FontWeight.w500,
+                  size: 10.sp,
+                );
+              },
             ),
-            TextButton(
-              onPressed: () {
+            Selector<PlayerData, int>(
+              selector: (_, playerData) => playerData.currentScore,
+              builder: (_, score, __) {
+                return CustomText(
+                  text: "${'score'.tr}: $score",
+                  textColor: Colors.deepOrange,
+                  fontWeight: FontWeight.w500,
+                  size: 10.sp,
+                );
+              },
+            ),
+            CustomGameButton(
+              width: 40.h,
+              height: 40.h,
+              onTap: () {
                 game.overlays.remove(Hud.id);
                 game.overlays.add(PauseMenu.id);
                 game.pauseEngine();
                 AudioManager.instance.pauseBgm();
               },
-              child: const Icon(Icons.pause, color: Colors.white),
+              icon: Icons.pause,
+              iconColor: Colors.white,
+              iconSize: 10.sp,
             ),
+            // TextButton(
+            //   onPressed: () {
+            //     game.overlays.remove(Hud.id);
+            //     game.overlays.add(PauseMenu.id);
+            //     game.pauseEngine();
+            //     AudioManager.instance.pauseBgm();
+            //   },
+            //   child: const Icon(Icons.pause, color: Colors.white),
+            // ),
             // Selector<PlayerData, int>(
             //   selector: (_, playerData) => playerData.lives,
             //   builder: (_, lives, __) {

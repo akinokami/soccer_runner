@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
             FlutterLogo(size: 80.h),
             SizedBox(height: 20.h),
             const CircularProgressIndicator(
-              color: Colors.orange,
+              color: Colors.deepOrange,
             ),
           ],
         ),

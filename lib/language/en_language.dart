@@ -114,6 +114,10 @@ class EnLanguage {
     'are_you_sure_to_restart': 'Are you sure to restart game?',
     'press_restart_to_start': 'Press Restart Button To Start again!',
     'victory': 'Victory',
-    'win_game': 'Congratulation You Win The Game!'
+    'win_game': 'Congratulation You Win The Game!',
+    'main_menu': 'Main Menu',
+    'exit': 'Exit',
+    'resume': 'Resume',
+    'sound': 'Sound'
   };
 }

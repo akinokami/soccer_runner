@@ -7,6 +7,7 @@ import 'package:soccer_run/game/soccer_run.dart';
 import 'package:soccer_run/screens/widget/custom_text.dart';
 import 'package:soccer_run/utils/app_theme.dart';
 import 'package:soccer_run/widgets/hud.dart';
+import 'package:soccer_run/widgets/language_menu.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../services/local_storage.dart';
@@ -65,11 +66,12 @@ class _GameScreenState extends State<GameScreen> {
                               Checkbox(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(6)),
-                                activeColor: Colors.orange,
+                                activeColor: Colors.deepOrange,
                                 side: BorderSide(
                                   width: 1.5,
-                                  color:
-                                      isChecked ? Colors.orange : Colors.black,
+                                  color: isChecked
+                                      ? Colors.deepOrange
+                                      : Colors.black,
                                 ),
                                 value: isChecked,
                                 onChanged: (bool? value) {
@@ -107,7 +109,7 @@ class _GameScreenState extends State<GameScreen> {
                                   backgroundColor:
                                       MaterialStateColor.resolveWith((states) =>
                                           isAccepted
-                                              ? Colors.orange
+                                              ? Colors.deepOrange
                                               : AppTheme.greyTicket)),
                               // ignore: sort_child_properties_last
                               child: CustomText(
@@ -152,6 +154,7 @@ class _GameScreenState extends State<GameScreen> {
           Hud.id: (_, game) => Hud(game),
           GameOverMenu.id: (_, game) => GameOverMenu(game),
           SettingsMenu.id: (_, game) => SettingsMenu(game),
+          LanguageMenu.id: (_, game) => LanguageMenu(game),
         },
         initialActiveOverlays: const [MainMenu.id],
         gameFactory: () => SoccerRun(

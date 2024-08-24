@@ -53,17 +53,15 @@ class CustomGameButton extends StatelessWidget {
             ],
             gradient: LinearGradient(
               colors: [
-                color1 ?? const Color(0xff8f7a66), // Colors.green,
-                color2 ??
-                    const Color.fromARGB(
-                        255, 176, 158, 140), // Colors.green.shade300,
-                color3 ?? const Color(0xff8f7a66), //Colors.green,
+                color1 ?? Colors.deepOrange, // Colors.green,
+                color2 ?? Colors.deepOrange.shade300, // Colors.green.shade300,
+                color3 ?? Colors.deepOrange, //Colors.green,
               ],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
             ),
             border:
-                Border.all(width: 3.w, color: AppTheme.silver)), //premiumColor2
+                Border.all(width: 2.w, color: AppTheme.silver)), //premiumColor2
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

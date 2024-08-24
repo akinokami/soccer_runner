@@ -75,6 +75,10 @@ class ViLanguage {
     'are_you_sure_to_restart': 'Bạn có chắc chắn khởi động lại trò chơi không?',
     'press_restart_to_start': 'Nhấn nút Khởi động lại để bắt đầu lại!',
     'victory': 'Chiến thắng',
-    'win_game': 'Xin chúc mừng bạn đã thắng trò chơi!'
+    'win_game': 'Xin chúc mừng bạn đã thắng trò chơi!',
+    'main_menu': 'Thực đơn chính',
+    'exit': 'Di ra ngoài',
+    'resume': 'Bản tóm tắt',
+    'sound': 'Âm thanh'
   };
 }
