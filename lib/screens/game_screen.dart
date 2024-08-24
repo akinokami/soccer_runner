@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:soccer_run/game/soccer_run.dart';
-import 'package:soccer_run/screens/widget/custom_game_button.dart';
 import 'package:soccer_run/screens/widget/custom_text.dart';
 import 'package:soccer_run/utils/app_theme.dart';
 import 'package:soccer_run/widgets/hud.dart';

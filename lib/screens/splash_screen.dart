@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:soccer_run/screens/game_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,15 +23,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            FlutterLogo(size: 100),
-            SizedBox(height: 20),
-            CircularProgressIndicator(),
+            FlutterLogo(size: 80.h),
+            SizedBox(height: 20.h),
+            const CircularProgressIndicator(
+              color: Colors.orange,
+            ),
           ],
         ),
       ),
