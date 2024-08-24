@@ -9,14 +9,19 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons:
   flame: 
   flame_audio: 
   hive: 
   path_provider: 
   provider: 
-  flutter:
-    sdk: flutter
-  cupertino_icons:
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  flutter_screenutil: ^5.9.3
+  webview_flutter: ^4.5.0
+
 
 dev_dependencies:
   hive_generator:
@@ -34,7 +39,7 @@ flutter:
     - assets/images/barrier/
     - assets/audio/
 
-  fonts:
-    - family: Audiowide
-      fonts:
-        - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
+  # fonts:
+  #   - family: Audiowide
+  #     fonts:
+  #       - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
