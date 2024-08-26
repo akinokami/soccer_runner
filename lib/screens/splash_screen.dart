@@ -29,7 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            FlutterLogo(size: 80.h),
+            Image.asset(
+              'assets/images/logo.webp',
+              width: 50.w,
+              height: 50.w,
+            ),
             SizedBox(height: 20.h),
             const CircularProgressIndicator(
               color: Colors.deepOrange,
