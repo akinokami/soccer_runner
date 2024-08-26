@@ -25,8 +25,7 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
     'barrier/barrier_fast.webp',
     'parallax/background.webp',
   ];
-  // 'AngryPig/Walk (36x30).webp',
-  // 'Bat/Flying (46x30).webp',
+
   static const _audioAssets = [
     '8BitPlatformerLoop.wav',
     'hurt7.wav',

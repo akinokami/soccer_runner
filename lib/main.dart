@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           title: 'Soccer Run',
           theme: ThemeData(
             // fontFamily: 'Audiowide',
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.deepOrange,
             visualDensity: VisualDensity.adaptivePlatformDensity,
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(

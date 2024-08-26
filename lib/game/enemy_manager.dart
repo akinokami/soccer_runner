@@ -46,8 +46,7 @@ class EnemyManager extends Component with HasGameReference<SoccerRun> {
     if (_data.isEmpty) {
       _data.addAll([
         EnemyData(
-          image: game.images
-              .fromCache('barrier/barrier.webp'), //'AngryPig/Walk (36x30).webp'
+          image: game.images.fromCache('barrier/barrier.webp'),
           nFrames: 16,
           stepTime: 0.10,
           textureSize: Vector2(38, 32),

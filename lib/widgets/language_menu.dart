@@ -50,7 +50,7 @@ class LanguageMenu extends StatelessWidget {
                           },
                           icon: Icons.arrow_back_ios_rounded,
                           iconColor: Colors.white,
-                          iconSize: 10.sp,
+                          iconSize: 9.sp,
                         ),
                         SizedBox(
                           width: 20.w,
@@ -99,6 +99,7 @@ class LanguageMenu extends StatelessWidget {
                                             Language.en.name
                                         ? Colors.deepOrange
                                         : AppTheme.grey,
+                                    size: 10.sp,
                                   ),
                                 ],
                               ),
@@ -173,6 +174,7 @@ class LanguageMenu extends StatelessWidget {
                                       Language.vi.name
                                   ? Colors.deepOrange
                                   : AppTheme.grey,
+                              size: 10.sp,
                             ),
                           ],
                         ),

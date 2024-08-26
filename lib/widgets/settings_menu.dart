@@ -59,7 +59,7 @@ class SettingsMenu extends StatelessWidget {
                           },
                           icon: Icons.arrow_back_ios_rounded,
                           iconColor: Colors.white,
-                          iconSize: 10.sp,
+                          iconSize: 9.sp,
                         ),
                         SizedBox(
                           width: 20.w,
@@ -82,9 +82,10 @@ class SettingsMenu extends StatelessWidget {
                           inactiveTrackColor: Colors.grey,
                           title: Row(
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.music_note,
                                 color: Colors.deepOrange,
+                                size: 10.sp,
                               ),
                               SizedBox(
                                 width: 5.w,
@@ -120,9 +121,10 @@ class SettingsMenu extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.language,
                                 color: Colors.deepOrange,
+                                size: 10.sp,
                               ),
                               SizedBox(
                                 width: 5.w,

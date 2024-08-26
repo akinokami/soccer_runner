@@ -60,7 +60,7 @@ class Hud extends StatelessWidget {
               },
               icon: Icons.pause,
               iconColor: Colors.white,
-              iconSize: 10.sp,
+              iconSize: 9.sp,
             ),
             // TextButton(
             //   onPressed: () {
