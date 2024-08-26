@@ -102,8 +102,8 @@ class SettingsMenu extends StatelessWidget {
                             Provider.of<Settings>(context, listen: false).bgm =
                                 value;
                             if (value) {
-                              AudioManager.instance
-                                  .startBgm('8BitPlatformerLoop.wav');
+                              AudioManager.instance.startBgm(
+                                  '8-bit-retro.mp3'); //'8BitPlatformerLoop.wav'
                             } else {
                               AudioManager.instance.stopBgm();
                             }

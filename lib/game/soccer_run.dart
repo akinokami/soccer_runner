@@ -27,7 +27,8 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
   ];
 
   static const _audioAssets = [
-    '8BitPlatformerLoop.wav',
+    '8-bit-retro.mp3',
+    //'8BitPlatformerLoop.wav',
     'hurt7.wav',
     'jump14.wav',
   ];
