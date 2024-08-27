@@ -36,7 +36,10 @@ class MainMenu extends StatelessWidget {
                 crossAxisAlignment: WrapCrossAlignment.center,
                 spacing: 10,
                 children: [
-                  FlutterLogo(size: 50.h),
+                  Image.asset(
+                    'assets/images/bg.webp',
+                    height: 60.h,
+                  ),
                   CustomText(
                     text: 'Soccer Run',
                     textColor: Colors.deepOrange,
