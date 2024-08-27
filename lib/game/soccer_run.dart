@@ -49,9 +49,10 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
     settings = await _readSettings();
 
     await AudioManager.instance.init(_audioAssets, settings);
-
-    AudioManager.instance
-        .startBgm('8-bit-retro.mp3'); //'8BitPlatformerLoop.wav'
+    if (settings.bgm == true) {
+      AudioManager.instance
+          .startBgm('8-bit-retro.mp3'); //'8BitPlatformerLoop.wav'
+    }
 
     await images.loadAll(_imageAssets);
 
@@ -126,7 +127,7 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
     if (settings == null) {
       await settingsBox.put(
         'SoccerRun.Settings',
-        Settings(bgm: true, sfx: true),
+        Settings(bgm: false, sfx: false), //todo
       );
     }
     return settingsBox.get('SoccerRun.Settings')!;

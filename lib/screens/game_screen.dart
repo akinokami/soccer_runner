@@ -53,12 +53,13 @@ class _GameScreenState extends State<GameScreen> {
                           SingleChildScrollView(
                             child: SizedBox(
                                 height: 1.sh * 0.55,
-                                width: double.infinity,
+                                width: 1.sw,
                                 child: WebViewWidget(
                                     controller: WebViewController()
-                                      ..loadHtmlString(Global.language == "vi"
-                                          ? Global.policyHtmlVi
-                                          : Global.policyHtmlEn))),
+                                      ..loadHtmlString(
+                                          Global.language == Language.vi.name
+                                              ? Global.policyHtmlVi
+                                              : Global.policyHtmlEn))),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
