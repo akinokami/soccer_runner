@@ -54,7 +54,7 @@ class EnemyManager extends Component with HasGameReference<SoccerRun> {
           canFly: false,
         ),
         EnemyData(
-          image: game.images.fromCache('barrier/barrier_fast.webp'),
+          image: game.images.fromCache('barrier/barrier.webp'),
           nFrames: 7,
           stepTime: 0.1,
           textureSize: Vector2(38, 32),
