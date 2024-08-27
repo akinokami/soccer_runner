@@ -5,7 +5,6 @@ import 'package:flame/components.dart';
 
 import '/game/enemy.dart';
 import 'soccer_run.dart';
-import '/game/audio_manager.dart';
 import '/models/player_data.dart';
 
 enum SoccerAnimationStates {
@@ -119,13 +118,13 @@ class Soccer extends SpriteAnimationGroupComponent<SoccerAnimationStates>
     if (isOnGround) {
       speedY = -300;
       current = SoccerAnimationStates.idle;
-      AudioManager.instance.playSfx('jump14.wav');
+      // AudioManager.instance.playSfx('jump14.wav');
     }
   }
 
   void hit() {
     isHit = true;
-    AudioManager.instance.playSfx('hurt7.wav');
+    //AudioManager.instance.playSfx('hurt7.wav');
     current = SoccerAnimationStates.hit;
     _hitTimer.start();
     playerData.lives -= 1;

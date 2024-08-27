@@ -29,8 +29,8 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
   static const _audioAssets = [
     '8-bit-retro.mp3',
     //'8BitPlatformerLoop.wav',
-    'hurt7.wav',
-    'jump14.wav',
+    // 'hurt7.wav',
+    // 'jump14.wav',
   ];
 
   late Soccer _soccer;
@@ -50,7 +50,8 @@ class SoccerRun extends FlameGame with TapDetector, HasCollisionDetection {
 
     await AudioManager.instance.init(_audioAssets, settings);
 
-    AudioManager.instance.startBgm('8BitPlatformerLoop.wav');
+    AudioManager.instance
+        .startBgm('8-bit-retro.mp3'); //'8BitPlatformerLoop.wav'
 
     await images.loadAll(_imageAssets);
 
