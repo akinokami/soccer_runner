@@ -115,7 +115,7 @@ class _GameScreenState extends State<GameScreen> {
                               // ignore: sort_child_properties_last
                               child: CustomText(
                                 text: 'accept'.tr,
-                                size: 11,
+                                size: 8,
                               ),
                               onPressed: isAccepted
                                   ? () async {
