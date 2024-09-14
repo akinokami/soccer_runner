@@ -52,7 +52,7 @@ class _GameScreenState extends State<GameScreen> {
                         children: [
                           SingleChildScrollView(
                             child: SizedBox(
-                                height: 1.sh * 0.55,
+                                height: 1.sh * 0.53,
                                 width: 1.sw,
                                 child: WebViewWidget(
                                     controller: WebViewController()
@@ -104,7 +104,7 @@ class _GameScreenState extends State<GameScreen> {
                           //   fontSize: 12,
                           // ),
                           SizedBox(
-                            height: 35,
+                            height: 35.h,
                             child: ElevatedButton(
                               style: ButtonStyle(
                                   backgroundColor:
@@ -115,7 +115,7 @@ class _GameScreenState extends State<GameScreen> {
                               // ignore: sort_child_properties_last
                               child: CustomText(
                                 text: 'accept'.tr,
-                                size: 12,
+                                size: 1,
                               ),
                               onPressed: isAccepted
                                   ? () async {
