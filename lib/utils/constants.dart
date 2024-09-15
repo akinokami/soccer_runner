@@ -53,4 +53,4 @@ String five = 'five';
 String six = 'six';
 String eight = 'eight';
 
-enum Language { en, vi }
+enum Language { en, vi, zh }

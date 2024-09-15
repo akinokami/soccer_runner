@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Global.language = LocalStorage.instance.read(language) ?? Language.vi.name;
+    Global.language = LocalStorage.instance.read(language) ?? Language.zh.name;
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
@@ -56,10 +56,12 @@ class MyApp extends StatelessWidget {
             ),
           ),
           translations: Languages(),
-          locale: Global.language == Language.vi.name
-              ? const Locale('vi', 'VN')
-              : const Locale('en', 'US'),
-          fallbackLocale: const Locale('vi', 'VN'),
+          locale: Global.language == Language.zh.name
+              ? const Locale('zh', 'CN')
+              : Global.language == Language.vi.name
+                  ? const Locale('vi', 'VN')
+                  : const Locale('en', 'US'),
+          fallbackLocale: const Locale('zh', 'CN'),
           home: const SplashScreen(),
         );
       },

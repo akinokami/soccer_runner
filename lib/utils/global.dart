@@ -299,7 +299,7 @@ Thu thập và sử dụng thông tin Để có trải nghiệm tốt hơn, khi 
 </html>
 """;
 
-  static String language = 'en';
+  static String language = 'zh';
 
   static double screenWidth = 0.0;
   static double screenHeight = 0.0;

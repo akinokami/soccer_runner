@@ -4,13 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import 'package:soccer_run/controller/language_controller.dart';
 import 'package:soccer_run/widgets/language_menu.dart';
 
 import '../game/soccer_run.dart';
 import '../screens/widget/custom_game_button.dart';
 import '../screens/widget/custom_text.dart';
-import '../utils/constants.dart';
+
 import '/models/settings.dart';
 import '/widgets/main_menu.dart';
 import '/game/audio_manager.dart';
@@ -24,7 +23,6 @@ class SettingsMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final languageController = Get.put(LanguageController());
     return ChangeNotifierProvider.value(
       value: game.settings,
       child: Center(
@@ -137,10 +135,7 @@ class SettingsMenu extends StatelessWidget {
                             ],
                           ),
                           CustomText(
-                            text: languageController.lang.value ==
-                                    Language.en.name
-                                ? 'english'.tr
-                                : 'vietnam'.tr,
+                            text: 'lang'.tr,
                             textColor: Colors.deepOrange,
                             size: 7.sp,
                           ),

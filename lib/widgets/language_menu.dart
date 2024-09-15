@@ -66,81 +66,81 @@ class LanguageMenu extends StatelessWidget {
                       height: 30.h,
                     ),
                     Obx(() => ListTile(
-                              onTap: () {
-                                languageController.changeLanguage("en", "US");
-                              },
-                              title: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                          onTap: () {
+                            languageController.changeLanguage("en", "US");
+                          },
+                          title: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
                                 children: [
-                                  Row(
-                                    children: [
-                                      Image.asset(
-                                        "assets/images/usa.webp",
-                                        width: 10.w,
-                                        height: 10.w,
-                                      ),
-                                      SizedBox(
-                                        width: 10.w,
-                                      ),
-                                      CustomText(
-                                        text: "English",
-                                        textColor: Colors.deepOrange,
-                                        size: 8.sp,
-                                      )
-                                    ],
+                                  Image.asset(
+                                    "assets/images/usa.webp",
+                                    width: 10.w,
+                                    height: 10.w,
                                   ),
-                                  Icon(
-                                    languageController.lang.value ==
-                                            Language.en.name
-                                        ? Icons.check_circle
-                                        : Icons.check_circle_outline,
-                                    color: languageController.lang.value ==
-                                            Language.en.name
-                                        ? Colors.deepOrange
-                                        : AppTheme.grey,
-                                    size: 10.sp,
+                                  SizedBox(
+                                    width: 10.w,
                                   ),
+                                  CustomText(
+                                    text: "English",
+                                    textColor: Colors.deepOrange,
+                                    size: 8.sp,
+                                  )
                                 ],
                               ),
-                            )
-                        // GestureDetector(
-                        //   onTap: () {
-                        //
-                        //   },
-                        //   child: Row(
-                        //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //     children: [
-                        //       Row(
-                        //         children: [
-                        //           Image.asset(
-                        //             "assets/images/usa.webp",
-                        //             width: 10.w,
-                        //             height: 10.w,
-                        //           ),
-                        //           SizedBox(
-                        //             width: 10.w,
-                        //           ),
-                        //           CustomText(
-                        //             text: "English",
-                        //             textColor: Colors.deepOrange,
-                        //             size: 8.sp,
-                        //           )
-                        //         ],
-                        //       ),
-                        //       Icon(
-                        //         languageController.lang.value == Language.en.name
-                        //             ? Icons.check_circle
-                        //             : Icons.check_circle_outline,
-                        //         color: languageController.lang.value ==
-                        //                 Language.en.name
-                        //             ? Colors.deepOrange
-                        //             : AppTheme.grey,
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
-                        ),
+                              Icon(
+                                languageController.lang.value ==
+                                        Language.en.name
+                                    ? Icons.check_circle
+                                    : Icons.check_circle_outline,
+                                color: languageController.lang.value ==
+                                        Language.en.name
+                                    ? Colors.deepOrange
+                                    : AppTheme.grey,
+                                size: 10.sp,
+                              ),
+                            ],
+                          ),
+                        )),
+                    Obx(() => ListTile(
+                          onTap: () {
+                            languageController.changeLanguage("zh", "CN");
+                          },
+                          title: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/china.webp",
+                                    width: 10.w,
+                                    height: 10.w,
+                                  ),
+                                  SizedBox(
+                                    width: 10.w,
+                                  ),
+                                  CustomText(
+                                    text: "中文",
+                                    textColor: Colors.deepOrange,
+                                    size: 8.sp,
+                                  )
+                                ],
+                              ),
+                              Icon(
+                                languageController.lang.value ==
+                                        Language.zh.name
+                                    ? Icons.check_circle
+                                    : Icons.check_circle_outline,
+                                color: languageController.lang.value ==
+                                        Language.zh.name
+                                    ? Colors.deepOrange
+                                    : AppTheme.grey,
+                                size: 10.sp,
+                              ),
+                            ],
+                          ),
+                        )),
                     Obx(
                       () => ListTile(
                         onTap: () {

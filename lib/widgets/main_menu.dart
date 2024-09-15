@@ -41,7 +41,7 @@ class MainMenu extends StatelessWidget {
                     height: 60.h,
                   ),
                   CustomText(
-                    text: 'Soccer Run',
+                    text: 'soccer_run'.tr,
                     textColor: Colors.deepOrange,
                     size: 12.sp,
                   ),
